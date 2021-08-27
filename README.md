@@ -18,7 +18,7 @@ grid-auto-rows
 grid-auto-columns
 grid-auto-flow
 ```
-**GRID ITEM
+**GRID ITEM**
 ```css
 /*grid-area
     /*grid row*/
