@@ -1,3 +1,6 @@
+Codepen for CSS grid:
+https://codepen.io/primozt/pen/wveaRpM?editors=1100
+
 **GRID CONTAINER**
 ```css
 /*grid-template*/
