@@ -1,6 +1,8 @@
 Codepen for CSS grid:
 https://codepen.io/primozt/pen/wveaRpM?editors=1100
 
+If grid items occupy more space than we defined, new row will be automatically added to grid.
+
 **GRID CONTAINER**
 ```css
 /*grid-template*/
