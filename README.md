@@ -6,7 +6,7 @@ If grid items occupy more space than we defined, new row will be automatically a
 **GRID CONTAINER**
 ```css
 /*
-	- css ads implicit grid if we didn't define rows/columns
+  - css ads implicit grid if we didn't define rows/columns
 */
 
 grid-template-rows: repeat(2,150px);
@@ -14,7 +14,7 @@ grid-template-rows: repeat(2,150px);
     - define number and height of rows
     repeat(2,150px): 2 rows with 150px height 
     1fr: occupy all remaining space
-		[header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end]: define names for stat and end of rows
+    [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end]: define names for stat and end of rows
 */
 
 grid-template-columns: repeat(3, 150px);
