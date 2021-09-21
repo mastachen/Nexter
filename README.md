@@ -24,23 +24,23 @@ grid-template-columns: repeat(3, 150px);
     repeat(3, 1fr): 3 columns that will occupy all available space
     1fr 2fr 1fr: second column will be double the size of other columns; available space is divided into 4 parts
     50% 1fr 1fr: first column will occupy 50% of container width, others will split the rest of the space
-		repeat(3, [col-start] 1fr [col-end]) 200px [grid-end]: define names for start and end of columns
-			.header {
-				grid-column: col-start 1 / grid-end;
-			}
+	repeat(3, [col-start] 1fr [col-end]) 200px [grid-end]: define names for start and end of columns
+		.header {
+			grid-column: col-start 1 / grid-end;
+		}
 
-			.sidebar {
-				grid-column: col-end 3 / grid-end;
-				grid-row: box-start / main-end;
-			}
+		.sidebar {
+			grid-column: col-end 3 / grid-end;
+			grid-row: box-start / main-end;
+		}
 
-			.main-content {
-				grid-column: col-start 1 / col-end 3;
-			}
+		.main-content {
+			grid-column: col-start 1 / col-end 3;
+		}
 
-			.footer {
-				grid-column: col-start 1 / grid-end;
-			}
+		.footer {
+			grid-column: col-start 1 / grid-end;
+		}
 	max-content: exact size to accomodate content, tries not to make line breaks
 	min-content: minimum size to avoid overflows
 	minmax: define minimum and maximum size
