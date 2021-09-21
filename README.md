@@ -41,11 +41,11 @@ grid-template-columns: repeat(3, 150px);
 			.footer {
 				grid-column: col-start 1 / grid-end;
 			}
-		max-content: exact size to accomodate content, tries not to make line breaks
-		min-content: minimum size to avoid overflows
-		minmax: define minimum and maximum size
-		repeat(auto-fill, 100px):	auto-fill: grid will automatically create as many tracks as will fit into container
-		repeat(auto-fit, 100px): grid will automatically create tracks, but colapses those which are empty (sets width to 0)
+	max-content: exact size to accomodate content, tries not to make line breaks
+	min-content: minimum size to avoid overflows
+	minmax: define minimum and maximum size
+	repeat(auto-fill, 100px):	auto-fill: grid will automatically create as many tracks as will fit into container
+	repeat(auto-fit, 100px): grid will automatically create tracks, but colapses those which are empty (sets width to 0)
 */
 
 grid-template: 150px / auto auto auto;
