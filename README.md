@@ -26,32 +26,32 @@ grid-template-columns: repeat(3, 150px);
     repeat(3, 1fr): 3 columns that will occupy all available space
     1fr 2fr 1fr: second column will be double the size of other columns; available space is divided into 4 parts
     50% 1fr 1fr: first column will occupy 50% of container width, others will split the rest of the space
-	repeat(3, [col-start] 1fr [col-end]) 200px [grid-end]: define names for start and end of columns
-		.header {
-		  grid-column: col-start 1 / grid-end;
-		}
-		
-		.sidebar {
-		  grid-column: col-end 3 / grid-end;
-		  grid-row: box-start / main-end;
-		}
-		
-		.main-content {
-		  grid-column: col-start 1 / col-end 3;
-		}
+		repeat(3, [col-start] 1fr [col-end]) 200px [grid-end]: define names for start and end of columns
+			.header {
+				grid-column: col-start 1 / grid-end;
+			}
 
-		.footer {
-		  grid-column: col-start 1 / grid-end;
-		}
-	max-content 1fr 1fr min-content:
+			.sidebar {
+				grid-column: col-end 3 / grid-end;
+				grid-row: box-start / main-end;
+			}
+
+			.main-content {
+				grid-column: col-start 1 / col-end 3;
+			}
+
+			.footer {
+				grid-column: col-start 1 / grid-end;
+			}
+		max-content 1fr 1fr min-content:
 		max-content: exact size to accomodate content, tries not to make line breaks
 		min-content: minimum size to avoid overflows
 		minmax: define minimum and maximum size
-	minmax(200px, 50%) repeat(3, 1fr):
-	repeat(2, minmax(150px, min-content)):
-	repeat(auto-fill, 100px):
-		auto-fill: grid will automatically create as many tracks as will fit into container
-		auto-fit: grid will automatically create tracks, but colapses those which are empty (sets width to 0)
+		minmax(200px, 50%) repeat(3, 1fr):
+		repeat(2, minmax(150px, min-content)):
+		repeat(auto-fill, 100px):
+			auto-fill: grid will automatically create as many tracks as will fit into container
+			auto-fit: grid will automatically create tracks, but colapses those which are empty (sets width to 0)
 */
 
 grid-template-areas: "head head head head"
