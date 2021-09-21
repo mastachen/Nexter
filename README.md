@@ -13,8 +13,8 @@ grid-template-rows: repeat(2,150px);
 /* 
     - define number and height of rows
     repeat(2,150px): 2 rows with 150px height 
-    1fr: occupy all remainig space
-	[header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end]: define names for stat and end of rows
+    1fr: occupy all remaining space
+		[header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end]: define names for stat and end of rows
 */
 
 grid-template-columns: repeat(3, 150px);
@@ -41,15 +41,11 @@ grid-template-columns: repeat(3, 150px);
 			.footer {
 				grid-column: col-start 1 / grid-end;
 			}
-		max-content 1fr 1fr min-content:
 		max-content: exact size to accomodate content, tries not to make line breaks
 		min-content: minimum size to avoid overflows
 		minmax: define minimum and maximum size
-		minmax(200px, 50%) repeat(3, 1fr):
-		repeat(2, minmax(150px, min-content)):
-		repeat(auto-fill, 100px):
-			auto-fill: grid will automatically create as many tracks as will fit into container
-			auto-fit: grid will automatically create tracks, but colapses those which are empty (sets width to 0)
+		repeat(auto-fill, 100px):	auto-fill: grid will automatically create as many tracks as will fit into container
+		repeat(auto-fit, 100px): grid will automatically create tracks, but colapses those which are empty (sets width to 0)
 */
 
 grid-template: 150px / auto auto auto;
