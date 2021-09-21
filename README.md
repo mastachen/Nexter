@@ -9,8 +9,6 @@ If grid items occupy more space than we defined, new row will be automatically a
 	- css ads implicit grid if we didn't define rows/columns
 */
 
-grid-template
-
 grid-template-rows: repeat(2,150px);
 /* 
     - define number and height of rows
@@ -52,6 +50,12 @@ grid-template-columns: repeat(3, 150px);
 		repeat(auto-fill, 100px):
 			auto-fill: grid will automatically create as many tracks as will fit into container
 			auto-fit: grid will automatically create tracks, but colapses those which are empty (sets width to 0)
+*/
+
+grid-template: 150px / auto auto auto;
+/*
+	- define template for rows and columns, better to use separate definition
+	150px / auto auto auto: make a three columns grid layout where the first row is 150px high
 */
 
 grid-template-areas: "head head head head"
