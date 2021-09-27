@@ -2,15 +2,30 @@
     grid-column: center-start / center-end;
     margin: 15rem 0;
 
-    display: grid; //item becomes also a grid container
-    //auto-fit: css will add as many track as it can fit in container
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    //we do not need to specify rows, we will have implicit grid
-    grid-gap: 6rem;
-    align-items: start;
+    //if browser supports grid, then use it
+    @supports(display: grid) {
+        display: grid; //item becomes also a grid container
+        //auto-fit: css will add as many track as it can fit in container
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        //we do not need to specify rows, we will have implicit grid
+        grid-gap: 6rem;
+        align-items: start;
+    }
 }
 
 .feature { //independent component, can be part of other container, it's reusable
+    //using floats if grid is not supported
+    float: left;
+    width: 33.3333%;
+    margin-bottom: 6rem;
+
+    //reset properties if grid is supported
+    @supports(display: grid) {
+        width: auto;
+        margin-bottom: 0;
+        //float is ignored if using grid
+    }
+
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-row-gap: 1.5rem;
