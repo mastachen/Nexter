@@ -12,18 +12,19 @@ If grid items occupy more space than we defined, new row will be automatically a
 grid-template-rows: repeat(2,150px);
 /* 
     - define number and height of rows
-    repeat(2,150px): 2 rows with 150px height 
-    1fr: occupy all remaining space
-    [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end]: define names for stat and end of rows
+    - repeat(2,150px): 2 rows with 150px height 
+    - 1fr: occupy all remaining space
+    - [header-start] 100px [header-end box-start] 200px [box-end main-start] 400px [main-end footer-start] 100px [footer-end]: 
+    define names for stat and end of rows
 */
 
 grid-template-columns: repeat(3, 150px);
 /* 
     - define number and width of columns
-    repeat(3, 150px): 3 columns with 150px width
-    repeat(3, 1fr): 3 columns that will occupy all available space
-    1fr 2fr 1fr: second column will be double the size of other columns; available space is divided into 4 parts
-    50% 1fr 1fr: first column will occupy 50% of container width, others will split the rest of the space
+    - repeat(3, 150px): 3 columns with 150px width
+    - repeat(3, 1fr): 3 columns that will occupy all available space
+    - 1fr 2fr 1fr: second column will be double the size of other columns; available space is divided into 4 parts
+    - 50% 1fr 1fr: first column will occupy 50% of container width, others will split the rest of the space
 	repeat(3, [col-start] 1fr [col-end]) 200px [grid-end]: define names for start and end of columns
 		.header {
 			grid-column: col-start 1 / grid-end;
@@ -41,11 +42,11 @@ grid-template-columns: repeat(3, 150px);
 		.footer {
 			grid-column: col-start 1 / grid-end;
 		}
-	max-content: exact size to accomodate content, tries not to make line breaks
-	min-content: minimum size to avoid overflows
-	minmax: define minimum and maximum size
-	repeat(auto-fill, 100px):	auto-fill: grid will automatically create as many tracks as will fit into container
-	repeat(auto-fit, 100px): grid will automatically create tracks, but colapses those which are empty (sets width to 0)
+	- max-content: exact size to accomodate content, tries not to make line breaks
+	- min-content: minimum size to avoid overflows
+	- minmax: define minimum and maximum size
+	- repeat(auto-fill, 100px): grid will automatically create as many tracks as will fit into container
+	- repeat(auto-fit, 100px): grid will automatically create tracks, but colapses those which are empty (sets width to 0)
 */
 
 grid-template: 150px / auto auto auto;
