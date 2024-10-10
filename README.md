@@ -1,3 +1,8 @@
+# Nexter
+Second project of Advanced CSS Course. Link to course: https://www.udemy.com/course/advanced-css-and-sass
+
+Below are a few notes to help understand some concepts and elements used in this project.
+
 Codepen for CSS grid:
 https://codepen.io/primozt/pen/wveaRpM?editors=1100
 
