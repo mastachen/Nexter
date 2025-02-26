@@ -6,12 +6,11 @@ Below are a few notes to help understand some concepts and elements used in this
 Codepen for CSS grid:
 https://codepen.io/primozt/pen/wveaRpM?editors=1100
 
-If grid items occupy more space than we defined, new row will be automatically added to grid.
-
 **GRID CONTAINER**
 ```css
 /*
   - css ads implicit grid if we didn't define rows/columns
+  - if grid items occupy more space than we defined, new row will be automatically added to grid
 */
 
 grid-template-rows: repeat(2,150px);
